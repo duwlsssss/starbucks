@@ -21,34 +21,143 @@
   <link rel="stylesheet" href="css/main.css"/>
 </head>
   <body>
-    <div class="container">
       <!-- header -->
       <header>
-        <a herf="/">
-          <img src="assets/img/logo.png" alt="logo"/>
-        </a>
-        <div class="menu">
-          <div class="sub-menu">
-            <a href="javascript:void(0)">Sign In</a>
-            <a href="javascript:void(0)">My Starbucks</a>
-            <a href="javascript:void(0)">Customer Services & Ideas</a>
-            <a href="javascript:void(0)">Find a Store</a>
-            <div class="search">
-              <input type="text"/>
-              <div class="material-icons">search</div>
-            </div>
+        <div class="inner">
+          <a herf="/">
+            <img src="assets/img/logo/logo.png" alt="logo" class="logo"/>
+          </a>
+          <div class="menu">
+            <ul class="sub-menu">
+              <li><a href="/signin">Sign In</a></li>
+              <li><a href="javascript:void(0)">My Starbucks</a></li>
+              <li><a href="javascript:void(0)">Customer Service & Ideas</a></li>
+              <li><a href="javascript:void(0)">Find a Store</a></li>
+              <li class="search">
+                <input type="text"/>
+                <div class="material-icons">search</div>
+              </li>
+            </ul>
+            <ul class="main-menu">
+              <li class=item>
+                <div class="item__name">COFFE</div>
+                <div class="item__content">
+                  <div class="content-menus">
+                    <div class="inner">
+                      <div class="content-menu">
+                        <h4>커피</h4>
+                        <ul>
+                          <li>스타벅스 원두</li>
+                          <li>스타벅스 비아</li>
+                          <li>스타벅스 오리가미</li>
+                        </ul>
+                      </div>
+                      <div class="content-menu">
+                        <h4>에스프레소 음료</h4>
+                        <ul>
+                          <li>도피오</li>
+                          <li>엣프레소 마키아또</li>
+                          <li>아메리카노</li>
+                          <li>마키아또</li>
+                          <li>카푸치노</li>
+                          <li>라떼</li>
+                          <li>모카</li>
+                          <li>리스트레또 비안코</li>
+                        </ul>
+                      </div>
+                      <div class="content-menu">
+                        <h4>커피 이야기</h4>
+                        <ul>
+                          <li>스타벅스 로스트 스팩트럼</li>
+                          <li>최상의 아라비카 원두</li>
+                          <li>한 잔의 커피가 완성되기까지</li>
+                          <li>클로버® 커피 추출 시스템</li>
+                        </ul>
+                      </div>
+                      <div class="content-menu">
+                        <h4>최상의 커피를 즐기는 법</h4>
+                        <ul>
+                          <li>커피 프레스</li>
+                          <li>푸어 오버</li>
+                          <li>아이스 푸어 오버</li>
+                          <li>커피 메이커</li>
+                          <li>리저브를 매장에서 다양하게 즐기는 법</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-texture">
+                    <div class="inner">
+                      <h4>나와 어울리는 커피 찾기</h4>
+                      <p>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</p>
+                      <h4>최상의 커피를 즐기는 법</h4>
+                      <p>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class=item>
+                <div class="item__name">MENU</div>
+                <div class="item__content">
+                  <div class="content-menus"></div>
+                  <div class="content-texture"></div>
+                </div>
+              </li>
+              <li class=item>
+                <div class="item__name">STORE</div>
+                <div class="item__content">
+                  <div class="content-menus"></div>
+                  <div class="content-texture"></div>
+                </div>
+              </li>
+              <li class=item>
+                <div class="item__name">RESPONSIBILITY</div>
+                <div class="item__content">
+                  <div class="content-menus"></div>
+                  <div class="content-texture"></div>
+                </div>
+              </li>
+              <li class=item>
+                <div class="item__name">MY STARBUCKS REWARDS</div>
+                <div class="item__content">
+                  <div class="content-menus"></div>
+                  <div class="content-texture"></div>
+                </div>
+              </li>
+              <li class=item>
+                <div class="item__name">WHAT'S NEW</div>
+                <div class="item__content">
+                  <div class="content-menus"></div>
+                  <div class="content-texture"></div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="main-menu">
-            <a href="/signin">COFFE</a>
-            <a href="javascript:void(0)">MENU</a>
-            <a href="javascript:void(0)">STORE</a>
-            <a href="javascript:void(0)">RESPONSIBILITY</a>
-            <a href="javascript:void(0)">MY STARBUCKS REWARDS</a>
-            <a href="javascript:void(0)">WHAT'S NEW</a>
-          </div>
+          <ul class="narrow-width-menu">
+            <li><div class="material-icons">person</div></li>
+            <li><div class="material-icons">location_on</div></li>
+            <li><div class="material-icons hamburger">menu</div></li>
+          </ul>
         </div>
+
+        <!--BADGES-->
+        <div class="badges">
+          <div class="close-badge">✕</div>
+          <div class="badge">
+            <img src="assets/img/badge/badge1.jpg" alt="Badge" />
+          </div>
+          <div class="badge">
+            <img src="assets/img/badge/badge2.jpg" alt="Badge" />
+          </div>
+          <div class="badge">
+            <img src="assets/img/badge/badge3.jpg" alt="Badge" />
+          </div>
+        </div>        
       </header>
-    </div>
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
