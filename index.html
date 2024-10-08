@@ -35,7 +35,7 @@
               <li><a href="javascript:void(0)">Find a Store</a></li>
               <li class="search">
                 <input type="text"/>
-                <div class="material-icons">search</div>
+                <div class="material-icons search-icon">search</div>
               </li>
             </ul>
             <ul class="main-menu">
@@ -136,7 +136,7 @@
           <ul class="narrow-width-menu">
             <li><div class="material-icons">person</div></li>
             <li><div class="material-icons">location_on</div></li>
-            <li><div class="material-icons hamburger">menu</div></li>
+            <li><div class="material-icons hamburger-icon">menu</div></li>
           </ul>
         </div>
 
@@ -154,7 +154,54 @@
           </div>
         </div>        
       </header>
-      
+
+      <!-- mobile hamburger menu -->
+      <!-- <div class="mobile__menu__back"></div>
+      <div class="mobile__menu mobile__menu--hide"> -->
+      <div class="mobile__menu__back"></div>
+      <div class="mobile__menu mobile__menu--show">
+        <div class="mobile__menu__inner">
+        <div class="close-mobile-menu">✕</div>
+        <div class="search-m">
+          <div class="search-m__inner">
+            <input type="text" class="mobile__menu__input"/>
+            <div class="btn btn--grey">Search</div>   
+          </div>    
+        </div>
+        <div class="categories__m">
+          <ul class="category">
+            <li class="title">My Starbucks<span class="material-icons arrow">arrow_drop_down</span></li>
+            <li class="list">한눈에 보기</li>
+            <li class="list">My 리워드</li>
+            <li class="list">My 스타벅스 카드</li>
+            <li class="list">My 스타벅스 e-Gift Card</li>
+            <li class="list">My 쿠폰</li>
+          </ul>
+          <ul class="category">
+            <li class="title">COFFEE<span class="material-icons arrow">arrow_drop_down</span></li>
+            <li class="list">한눈에 보기</li>
+            <li class="list">커피</li>
+            <li class="list">나와 어울리는 커피</li>
+            <li class="list">스타벅스 리저브</li>
+            <li class="list">에스프레소 음료</li>
+            <li class="list">최상의 커피를 즐기는 법</li>
+            <li class="list">커피 이야기</li>
+          </ul>
+          <ul class="category">
+            <li class="title">STORE <span class="material-icons arrow">arrow_drop_down</span></li>
+          </ul>
+          <ul class="category">
+            <li class="title">RESPONSIBILITY <sapn class="material-icons arrow">arrow_drop_down</sapn></li>
+          </ul>
+          <ul class="category">
+            <li class="title">Starbucks Rewards <span class="material-icons arrow">arrow_drop_down</span></li>
+          </ul>
+          <ul class="category">
+            <li class="title">WHAT'S NEW <span class="material-icons arrow">arrow_drop_down</span></li>
+          </ul>
+        </div>
+      </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
