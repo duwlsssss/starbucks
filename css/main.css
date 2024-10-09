@@ -30,17 +30,16 @@ a {
 
 /* BUTTON */
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.6rem;
+  padding: 1vw;
   border: 2px solid #333;
   border-radius: 4px;
+  text-align: center;
   color: #fff;
   font-weight: 700;
   font-size: clamp(0.3rem, 2.5vw, 1.2rem);
   cursor: pointer;
   transition: all 0.4s;
+  overflow: hidden;
 }
 .btn:hover {
   background-color: #333;
@@ -165,7 +164,9 @@ header .menu .main-menu .item .item__content {
   z-index: 1;
   width: 100%;
   background-color: #2c2a29;
+  transition: top 2s ease;
   display: none;
+  opacity: 0;
 }
 header .menu .main-menu .item .item__content .content-menus {
   padding: 1.5rem 0;
@@ -192,26 +193,26 @@ header .menu .main-menu .item .item__content .content-menus .inner .content-menu
 header .menu .main-menu .item .item__content .content-menus .inner .content-menu ul li:hover {
   color: #669900;
 }
-header .menu .main-menu .item .item__content .content-texture {
-  padding: 1rem 0;
+header .menu .main-menu .item .item__content .content-recommand {
+  padding: 1.5rem 0;
   background-color: #000;
 }
-header .menu .main-menu .item .item__content .content-texture .inner {
+header .menu .main-menu .item .item__content .content-recommand .inner {
   flex-direction: column;
   gap: 1rem;
 }
-header .menu .main-menu .item .item__content .content-texture .inner h4 {
+header .menu .main-menu .item .item__content .content-recommand .inner h4 {
   font-size: clamp(0.7rem, 2.5vw, 1rem);
   font-weight: 700;
-  color: white;
+  color: #999;
   margin-bottom: -0.5rem;
   transition: color 0.3s;
 }
-header .menu .main-menu .item .item__content .content-texture .inner h4:hover {
+header .menu .main-menu .item .item__content .content-recommand .inner h4:hover {
   color: #669900;
   cursor: pointer;
 }
-header .menu .main-menu .item .item__content .content-texture .inner p {
+header .menu .main-menu .item .item__content .content-recommand .inner p {
   font-size: clamp(0.5rem, 1.5vw, 0.8rem);
   color: #669900;
 }
@@ -229,6 +230,7 @@ header .narrow-width-menu {
 .badges .close-badge {
   position: absolute;
   cursor: pointer;
+  font-size: 0.9rem;
   top: 1%;
   left: -20%;
 }
@@ -249,6 +251,8 @@ header .narrow-width-menu {
   height: 100%;
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0; /**/
+  display: none; /**/
 }
 
 .mobile__menu {
@@ -258,7 +262,7 @@ header .narrow-width-menu {
   background-color: #333;
   z-index: 12;
   color: white;
-  transition: right 0.4s ease-in;
+  transition: right 0.4s;
 }
 .mobile__menu .mobile__menu__inner {
   height: 100%;
@@ -267,8 +271,8 @@ header .narrow-width-menu {
 .mobile__menu .mobile__menu__inner .close-mobile-menu {
   position: absolute;
   font-size: 2.5rem;
-  left: -15%;
-  top: 2%;
+  left: -13%;
+  top: 3%;
   cursor: pointer;
 }
 .mobile__menu .mobile__menu__inner .search-m {
@@ -322,6 +326,71 @@ header .narrow-width-menu {
   right: -100%;
 }
 
+/* VISUAL */
+.visual {
+  margin-top: 115px;
+  background: url("/assets/img/visual/visual_bg.jpg") no-repeat center;
+  height: 50vw;
+  max-height: 646px;
+}
+.visual .visual__inner {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 90%;
+}
+.visual .visual__inner .title {
+  position: absolute;
+  width: 50%;
+  top: 5%;
+  text-align: center;
+}
+.visual .visual__inner .title img {
+  width: 100%;
+  height: auto;
+}
+.visual .visual__inner .title .btn {
+  display: inline-block;
+  margin-top: 2vw;
+}
+.visual .visual__inner .cup1 {
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  right: 0;
+}
+.visual .visual__inner .cup1 .image {
+  width: 100%;
+  height: auto;
+}
+.visual .visual__inner .cup1 .text {
+  position: absolute;
+  width: 85%;
+  height: auto;
+  top: 2%;
+  left: -80%;
+}
+.visual .visual__inner .cup2 {
+  position: absolute;
+  width: 23%;
+  bottom: 0;
+  right: 20%;
+}
+.visual .visual__inner .cup2 .image {
+  width: 100%;
+  height: auto;
+}
+.visual .visual__inner .cup2 .text {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 30%;
+  left: -90%;
+}
+.visual .visual__inner .fade-in {
+  opacity: 0;
+}
+
 @media (max-width: 960px) {
   /*header*/
   header {
@@ -348,6 +417,9 @@ header .narrow-width-menu {
   }
   .narrow-width-menu .material-icons {
     font-size: 3rem;
+  }
+  .visual {
+    margin-top: 67.5px;
   }
 }
 

@@ -37,7 +37,7 @@ const itemEls = document.querySelectorAll('.item').forEach(item => {
     });
   });
 });
-
+ 
 // close-badge 클릭하면 badge 삭제
 const badgeContainer = document.querySelector('.badges');
 const closeBadgeBtn = document.querySelector('.close-badge')
@@ -45,21 +45,22 @@ closeBadgeBtn.addEventListener('click', function(){
   gsap.to(badgeContainer, {
     duration: 0.2,
     opacity:0,
-    display: 'none',
+    onComplete: function() {
+      badgeContainer.remove(); // 애니메이션 완료 후 DOM에서 제거
+    }
   });  
 });
 
 // 스크롤시 badge 표시
-const badgeEl = document.querySelector('.badges');
 window.addEventListener('scroll', _.throttle(function(){
   if(window.scrollY > 500){
-    gsap.to(badgeEl,{
+    gsap.to(badgeContainer,{
       opacity:0,
       display:'none',
       duration:.4,
     });
   }else{
-    gsap.to(badgeEl,{
+    gsap.to(badgeContainer,{
       opacity:1,
       display:'block',
       duration:.6,
@@ -77,7 +78,7 @@ mobileMenuBtn.addEventListener('click', () => {
   gsap.to(menubg,{
     opacity:1,
     display:'block',
-    duration:.6,
+    duration:.2,
   });
   menu.classList.remove('mobile__menu--hide');
   menu.classList.add('mobile__menu--show');
@@ -89,7 +90,7 @@ closeBtn.addEventListener('click', () => {
   gsap.to(menubg,{
     opacity:0,
     display:'none',
-    duration:.6,
+    duration:.2,
   });
 });
 
@@ -122,4 +123,3 @@ const fadelEls = document.querySelectorAll('.visual .fade-in').forEach((fadeEl,i
     delay:index * .5, //순차적으로 표시
   });
 });
-
