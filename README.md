@@ -10,4 +10,4 @@ css, valina js를 연습하기 위해 만들었습니다.
 
 ☕️ 기간: 2024.10.6 ~ 10.12
 
-☕️ 주소
+☕️ 주소: https://classy-dolphin-2e498a.netlify.app/
